@@ -16,7 +16,6 @@ A minimal, open-source **spec‑driven, agentic web IDE** inspired by AWS Kiro. 
 
 ### 1) Create a virtualenv & install
 ```bash
-cd server
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
