@@ -1,0 +1,1 @@
+const btn=document.getElementById('btn');const out=document.getElementById('count');let n=0;btn.addEventListener('click',()=>{n++;out.textContent=String(n)});

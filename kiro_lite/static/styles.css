@@ -1,0 +1,15 @@
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;color:#111;background:#fafafa}
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#fff;position:sticky;top:0;border-bottom:1px solid #eee;z-index:1}
+h1{font-size:20px;margin:0}
+nav button, nav a{margin-left:8px;padding:8px 10px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;text-decoration:none;color:#111}
+main{display:grid;grid-template-columns:1fr 2fr;gap:14px;padding:14px}
+.left textarea{width:100%;height:20vh;border:1px solid #ddd;border-radius:10px;padding:8px;background:#fff}
+.left ol{background:#fff;border:1px solid #eee;border-radius:10px;padding:8px;min-height:10vh}
+.right{display:grid;grid-template-rows:auto auto 1fr;gap:10px}
+.files{background:#fff;border:1px solid #eee;border-radius:10px;padding:8px}
+.file-toolbar{display:flex;gap:8px;margin-bottom:8px}
+#file-list{list-style:none;padding:0;margin:0;max-height:20vh;overflow:auto}
+#file-list li{display:flex;justify-content:space-between;padding:6px 4px;border-bottom:1px dashed #f0f0f0}
+.editor{background:#fff;border:1px solid #eee;border-radius:10px;padding:8px}
+.editor-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+#preview{width:100%;height:40vh;border:1px solid #ddd;border-radius:10px;background:#fff}

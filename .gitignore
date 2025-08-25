@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*.local
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+*.pot
+*.pid
+
+# macOS / Windows junk
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / packaged
+dist/
+build/
+*.bak
+
+# Workspace (generated project files live here, don’t track by default)
+server/kiro_lite/workspaces/*
+
+# But keep an empty default folder
+!server/kiro_lite/workspaces/.gitkeep
+
+# Local zips / archives
+*.zip

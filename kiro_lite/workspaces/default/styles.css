@@ -1,0 +1,4 @@
+*{box-sizing:border-box}body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:2rem;background:#f5f5f5;color:#222}
+#app{max-width:720px;margin:0 auto;background:#fff;padding:2rem;border-radius:1rem;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+button{padding:.7rem 1rem;border-radius:.7rem;border:1px solid #ccc;background:#fafafa;cursor:pointer}
+button:active{transform:translateY(1px)}

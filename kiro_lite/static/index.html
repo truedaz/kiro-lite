@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Kiro-Lite: Spec-Driven Web IDE</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>🟣 Kiro‑Lite</h1>
+      <nav>
+        <button id="btn-generate">Generate Spec</button>
+        <button id="btn-derive">Derive Tasks</button>
+        <button id="btn-apply">Build Task</button>
+        <a id="btn-download" href="/api/download">Download Workspace</a>
+      </nav>
+    </header>
+    <main>
+      <section class="left">
+        <h2>Prompt</h2>
+        <textarea id="prompt" placeholder="Describe what you want to build...">Build a tiny single‑page web app with a title and a counter button.</textarea>
+        <h2>Spec</h2>
+        <textarea id="spec"></textarea>
+        <h2>Tasks</h2>
+        <ol id="tasks"></ol>
+      </section>
+      <section class="right">
+        <div class="files">
+          <div class="file-toolbar">
+            <input id="new-file" placeholder="new file path e.g. index.html"/>
+            <button id="create-file">Create</button>
+            <button id="refresh-files">Refresh</button>
+          </div>
+          <ul id="file-list"></ul>
+        </div>
+        <div class="editor">
+          <div class="editor-toolbar">
+            <span id="current-file">No file</span>
+            <button id="save-file">Save</button>
+            <button id="open-file">Open</button>
+          </div>
+          <div id="monaco" style="height: 60vh; border:1px solid #ddd;"></div>
+        </div>
+        <iframe id="preview" title="Preview"></iframe>
+      </section>
+    </main>
+    <!-- Monaco via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.0/min/vs/loader.min.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
